@@ -39,32 +39,43 @@ Blogify is a simple yet powerful blogging platform that allows users to:
 ## Setup and Installation
 
 1. **Clone the Repository**:
- 
+   ```bash
    git clone https://github.com/your-username/blogify.git
+   ```
 
-2. **Install Dependencies**:
-   Install the required dependencies using npm:
+2. **Navigate to the Project Directory**:
+   ```bash
+   cd blogify
+   ```
+
+3. **Install Dependencies**:
+   ```bash
    npm install
+   ```
 
-3. **Set Environment Variables**:
-   Create a `.env` file in the root directory and add the following environment variables:
+4. **Set Environment Variables**:
+   Create a `.env` file in the root directory and add the following:
+   ```env
    PORT=3000
    MONGO_URI=your-mongodb-connection-string
    JWT_SECRET=your-secret-key
+   ```
 
-4. **Run the Application**:
-   You can start the application with:
-
+5. **Run the Application**:
+   Start the application with:
+   ```bash
    npm start
-
-   For development, use `nodemon` to automatically restart the server on file changes:
+   ```
+   For development, use:
+   ```bash
    npm run dev
+   ```
 
-5. **Access the Application**:
+6. **Access the Application**:
    Open your browser and navigate to:
-
+   ```
    http://localhost:3000
-
+   ```
 
 ## Usage
 
@@ -74,8 +85,9 @@ Blogify is a simple yet powerful blogging platform that allows users to:
 4. **View Blogs**: Visit the homepage to view a list of all blogs. Click on individual blogs to read them.
 5. **Edit or Delete Blogs**: Edit or delete blogs you have created from your profile page.
 
-# Folder Structure
+## Folder Structure
 
+```
 blogify/
 ├── controllers/          # Controllers handling logic for routes
 │   ├── blogController.js
@@ -92,28 +104,26 @@ blogify/
 ├── routes/               # Routes defining the app's URL structure
 │   ├── blog.js           # Blog-related routes
 │   ├── user.js           # User-related routes (auth)
-├── services/             # Services for handling core logic
-│   └── authentication.js # Logic for handling user authentication
 ├── views/                # EJS views/templates
 │   ├── partials/         # Reusable view partials (header, footer, etc.)
 │   ├── addBlog.ejs       # View for adding a new blog
 │   ├── home.ejs          # Home page for displaying blogs
 │   ├── signin.ejs        # Sign-in page
 │   ├── signup.ejs        # Sign-up page
-│   └── viewBlog.ejs      # View for displaying individual blog
-├── .env                  # Environment variables (MongoDB URI, JWT secret, etc.)
+│   └── viewBlog.ejs      # View for displaying individual blogs
+├── .env                  # Environment variables
 ├── .gitignore            # Git ignore file
 ├── app.js                # Main application entry point
 ├── package.json          # Project metadata and dependencies
 └── README.md             # Project documentation
-
+```
 
 ## Screenshots
 ### Home Page
 ![Home Page](http://localhost:8000/)
 
 ### Add Blog Page
-![Add Blog Page]((http://localhost:8000/blog/add-new))
+![Add Blog Page](http://localhost:8000/blog/add-new)
 
 ## Contributing
 Contributions are welcome! Please follow these steps:
