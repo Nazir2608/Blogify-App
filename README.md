@@ -74,7 +74,7 @@ Blogify is a simple yet powerful blogging platform that allows users to:
 4. **View Blogs**: Visit the homepage to view a list of all blogs. Click on individual blogs to read them.
 5. **Edit or Delete Blogs**: Edit or delete blogs you have created from your profile page.
 
-## Folder Structure
+# Folder Structure
 
 blogify/
 ├── controllers/          # Controllers handling logic for routes
