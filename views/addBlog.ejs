@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>Add Blog</title>
+  </head>
+  <body>
+    <%- include("./partials/nav") %>
+
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Add a New Blog</h1>
+      <form action="/blog" method="POST" enctype="multipart/form-data">
+        <!-- Blog Title -->
+        <div class="mb-3">
+          <label for="blogTitle" class="form-label">Blog Title</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            name="title"
+            placeholder="Enter the blog title"
+          />
+        </div>
+
+        <!-- Blog Content -->
+        <div class="mb-3">
+          <label for="blogContent" class="form-label">Blog Content</label>
+          <textarea
+            class="form-control"
+            id="content"
+            name="body" <!-- Fixed comment issue here --></textarea>
+        </div>
+
+        <!-- Blog Image (Optional) -->
+        <div class="mb-3">
+          <label for="blogImage" class="form-label">Upload Image (Optional)</label>
+          <input type="file" class="form-control" id="coverImage" name="coverImage" />
+
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Add Blog</button>
+        </div>
+      </form>
+    </div>
+
+    <%- include("./partials/scripts") %>
+  </body>
+</html>
